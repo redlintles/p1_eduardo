@@ -83,20 +83,6 @@ admin123
 Na tela de login, escolha a aba **Sou Cliente**, cadastre-se com nome
 e e-mail (dados fictícios servem) e faça o checkout normalmente.
 
-## Publicação (item "Publicação do site/app")
-
-O documento do trabalho libera o uso das connection strings fornecidas
-em vez da criação de novos recursos de hospedagem. Caso seja necessário
-publicar a aplicação (ex.: Azure App Service / Static Web Apps, Render,
-Railway, Vercel), o processo é:
-
-- **Backend**: publicar a pasta `backend` como um serviço Node.js,
-  configurando as variáveis de ambiente de `backend/.env` no serviço
-  escolhido.
-- **Frontend**: publicar a pasta `frontend` (`npm run build` gera a
-  pasta `dist`) como um site estático, ajustando `VITE_API_URL` para a
-  URL pública do backend publicado.
-
 ## Build de produção
 
 ```bash
